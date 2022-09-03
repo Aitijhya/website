@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetYourHelpers</title>
+  <link rel="stylesheet" href="home.css">
+
+
+  <style>
+    body{
+      background: black;
+    }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#navbar{
+  /* position: fixed; */
+  height: 65px;
+  background: black;
+ grid-area: abc;
+}
+    h2 {
+      display: inline;
+      margin: auto;
+      /* border: 1px solid black;
+  border-radius: 2px;
+  background: lemonchiffon; */
+      padding: 5px;
+      text-decoration: underline;
+      font-size: 2rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      font-family: 'serif';
+      text-emphasis:bold ;
+      z-index: 1;
+    }
+
+   
+
+    .about-contain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+      background: #0f957c;
+      z-index: 3;
+
+    }
+
+    .about-para {
+      background: rgb(206, 206, 200);
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      padding: 2vh 4vh;
+      width: 90%;
+      border-radius: 10px;
+       /* position: relative; */
+       top: 100px;
+  
+
+   
+    }
+    .photos-ceo{
+      display: flex;
+      flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+
+    }
+    .ceo{
+       display: block;
+       margin:40px 20px;
+    }
+    .ceo img{
+        height: 160px;
+        width: 140px;
+    }
+    h4{
+      color: blue;
+      
+    } 
+    .ceo img:hover{
+       transform: scale(1.04);
+    }
+    .ceo img:hover.ceo h4 {
+       display: inline-block;
+       color: blue;
+    }
+    #menu{
+      z-index: 100000;
+    }
+    @media only screen and (max-width:2000px) and (min-width:800px) {
+    .about-contain{
+      height: 100vh;
+    }
+    .about-para{
+      height: 80vh;
+    }
+  }
+ 
+  </style>
+
+</head>
+
+<body>
+<div class="home" id="navbar">
+      <input type="checkbox" id="ham-burger" name="hamicon">
+      <label id="hams" for="ham-burger"><img width="60px" src="images/image-removebg-preview.png" alt=""></label>
+      <label id="cross" for="ham-burger"><img width="33px" src="images/image__1_-removebg-preview.png" alt=""></label>
+    <ul id="menu">      
+      <li><a  href="index.html">Home</a></li>
+      <li><a  href="services.html">Services</a></li>
+      <li><a class="active" href="about.html">About Us</a></li>
+      <li><a  href="contact.html">Contact Us</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+  </ul>
+</div>
+
+
+  <div class="about-contain">
+    <div class="about-para">
+      <h2>ABOUT US</h2>
+      <p>We are getyourhelpers.com,a online home service platform, launched in 2022. We operates in Kolkata and the suburban
+        area near kolkata. getyourhelpers.com helps customers to get a reliable and better service to finding their helpers -
+        Technician, Electrician, Cook, Maid, plumber, Carpenter etc. is trying to constantly provide 
+        services without any inconveniences by the help of theseexperienced and trained helpers.
+        Our main vision is to help people who live in the urban area and face different and trying to get rid of
+        thisthrough a pocket friendly way.We also try to empower many professionals ( Helpers) to deliver service for
+        those customers.Getyourhelpers.com has near about 300 trained professionals across 50 areas in Kolkata and near by it.Our
+        platform has gained nearly 10 thousand customers across the city.</p>
+        <div class="photos-ceo">
+          <div class="ceo">
+            <img src="images/ceo.png" alt="">
+          <h4> Soham Pati,CE0</h4>
+          </div>
+          <div class="ceo">
+              <img src="images/cfo.jpeg" alt="">
+            <h4> Souvik Bhanja,CFO</h4>
+          </div>
+          <div class="ceo">
+             <img src="images/coo.jpeg" alt="">
+            <h4> Vikash Yadav,COO</h4>
+          </div>
+
+    </div>
+
+    </div>
+  
+</body>
+</html>  

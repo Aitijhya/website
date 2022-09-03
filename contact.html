@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetYourHelpers</title>
+  <link rel="stylesheet" href="home.css">
+  <style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+
+ width: 100vw;
+
+ overflow-x: hidden;
+ background: black;
+}
+#navbar{
+  width: 100%;
+  height: 65px;
+  /* position: fixed; */
+}
+
+    .contact-container {
+      width: 100%;
+      height: 120%;
+      /* height: 100vh; */
+      background: #001660;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* z-index: -13; */
+      position: absolute;
+      top: 65px;
+     
+
+    }
+
+    form {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 2vh 4vh;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      position: absolute;
+      top: 65px;
+      z-index: 6777777777777777777777777777;
+    }
+
+    form h3 {
+      color: #555;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.75rem;
+      position: relative;
+      top: 10px;
+      z-index: 10;
+    }
+
+    form input,
+    form textarea {
+      border: 0;
+      margin: 10px 0;
+      padding: 20px;
+      outline: none;
+      background-color: #f5f5f5;
+      font-size: 16px;
+      z-index: 54444444444444444444;
+    }
+
+    #contact-submit {
+      padding: 5px;
+      background: #ff5361;
+      color: #fff;
+      font-size: 18px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      width: 150px;
+      height: 50px;
+      margin: 20px auto 0;
+      border-radius: 30px;
+    }
+    #navbar{
+    height: 65px;
+    background:black;
+    color:yellow;
+  
+
+}
+li{
+  margin-top: 20px;
+  margin-bottom: 0px;
+
+}
+
+@media only screen and (max-width:1280px) and (min-width:0px) {
+  .contact-container{
+    z-index: 5;
+  }
+  #ham-burger:checked~.contact-container{
+       z-index: -66666666666666999999999999999999;
+    }
+  #ham-burger:checked~form{
+       z-index: -66666666666666;
+    }
+
+
+
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div>
+  <div class="home" id="navbar">
+    <input type="checkbox" id="ham-burger" name="hamicon">
+    <label id="hams" for="ham-burger"><img width="60px" src="images/image-removebg-preview.png" alt=""></label>
+    <label id="cross" for="ham-burger"><img width="28px" src="images/image__1_-removebg-preview.png" alt=""></label>
+    <ul id="menu">           
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active"  href="contact.html">Contact Us</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+   </ul>
+</div>
+</div>
+  
+
+
+  <div class="contact-container">
+    <form action="https://formspree.io/f/xpznaada" method="POST" >
+      <h3>GET IN TOUCH</h3>
+      <input type="text" name="Customer Name"  id="name" placeholder="Your Name" required>
+      <input type="email"name="Customer Email"  id="email" placeholder="Email Id" required>
+      <input type="text" name="Subject"  id="phone" placeholder="Subject" required>
+      <textarea name="Description of Submit"  id="message" rows="4" placeholder="How can we help you?"></textarea>
+      <button id="contact-submit" type="submit">Send</button>
+    </form>
+
+  </div>
+ 
+
+
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host:"smtp.elasticemail.com",
+        Username:"managehelpers24@gmail.com",
+        Password:"BAF9BF5CE8816F059B6AB1589FFC3378622E",
+        To:"managehelpers24@gmail.com",
+        From:document.getElementById("email").value,
+        Subject:"New Enquery #" + document.getElementById("name").value,
+        Body: "Name: " + document.getElementById("name").value
+          + "<br> Email Id: " + document.getElementById("email").value
+          + "<br> Phone No: " + document.getElementById("phone").value
+          + "<br> Description: " + document.getElementById("message").value
+      }).then(
+        message => alert("Message sent successfully")
+      );
+
+
+    }
+  </script> -->
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+  window.__lc = window.__lc || {};
+  window.__lc.license = 14346201;
+  ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/14346201/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+</body>
+
+</html>

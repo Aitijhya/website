@@ -1,0 +1,268 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetYourHelpers</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<style>
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background: #000;
+  /* z-index: -7656576575; */
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+
+}
+.service-container{
+ display: flex;
+ flex-direction: column;
+ /* justify-content: space-between; */
+ background: whitesmoke;
+ overflow-x: hidden;
+ box-sizing: border-box;
+ width: 100vw;
+
+}
+.child-ser{
+  background: white;
+  /* border: 1px solid black; */
+  width: 80%;
+  height:32vw;
+  margin-top:10px ;
+  margin-bottom:10px ;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.child-ser img{
+height: 100%;
+width: 100%;
+/* float: left; */
+}
+
+.child-ser button{
+  display: block;
+  outline: none;
+  background: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+position: relative;
+/* right: 1098px; */
+margin-left:auto;
+  margin-right:auto;
+}
+.btn-prb{
+  display: block;
+  outline: none;
+  background: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.child-ser img:hover{
+ 
+ cursor: pointer;
+ border: 1px solid red;
+}
+.child-ser img{
+height: 100%;
+width: 100%;
+border: 1px solid black;
+}
+
+
+
+
+@media only screen and (max-width:659px) and (min-width:315px) {
+
+   .service-container{
+    overflow-x: hidden;
+   }
+   .child-ser img{
+height: 100%;
+width: 100%;
+}
+.btn-prb{
+ height: 100%;
+width: 100%;
+}
+}
+@media only screen and (max-width:1496px) and (min-width:0px) {
+
+   .service-container{
+    overflow-x: hidden;
+   }
+
+   .child-ser button{
+  display: block;
+  outline: none;
+  background: whitesmoke;
+  border: none;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+
+  position: relative;
+  right: 0px;
+}
+   /* .child-ser button{
+  display: block;
+  outline: none;
+  background: whitesmoke;
+  border: none;
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  right: 0px;
+} */
+.child-ser img{
+height: 100%;
+width: 100%;
+}
+.btn-prb{
+ height: 100%;
+width: 100%;
+}
+}
+@media only screen and (max-width:550px) and (min-width:400px){
+  .child-ser{
+  width: 85%;
+  height:42vw;
+  }
+}
+@media only screen and (max-width:399px) and (min-width:300px){
+  .child-ser{
+  width: 92%;
+  height:55vw;
+}
+}
+@media only screen and (max-width:299px) and (min-width:200px){
+  .child-ser{
+  width: 96%;
+  height:70vw;
+}
+@media only screen and (max-width:659px) and (min-width:315px) {
+   
+    #navbar ul{
+       
+        height: 70vh;
+    
+     }
+}
+}
+
+</style>
+
+<body>
+  <div class="home" id="navbar">
+    <input type="checkbox" id="ham-burger" name="hamicon">
+    <label id="hams" for="ham-burger"><img width="60px" src="images/image-removebg-preview.png" alt=""></label>
+    <label id="cross" for="ham-burger"><img width="33px" src="images/image__1_-removebg-preview.png" alt=""></label>
+  <ul id="menu">      
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active"  href="services.html">Services</a></li>
+    <li><a  href="about.html">About Us</a></li>
+    <li><a  href="contact.html">Contact Us</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+</ul>
+</div>
+
+ <div class="service-container">
+
+    <div class="child-ser">
+     
+        <button  onclick="location.href = 'plumber.html';" ><img src="services/ser1.png" alt=""></button>
+     
+    </div>
+
+
+    <div class="child-ser">
+      
+        <button  onclick="location.href = 'catering.html';"  ><img src="services/ser2.png" alt=""></button>
+   
+
+    </div>
+
+
+    <div class="child-ser">
+      
+      <button  onclick="location.href = 'cleaning.html';"  ><img src="services/ser3.png" alt=""></button>
+
+    </div>
+
+
+    <div class="child-ser">
+       <button  onclick="location.href = 'carpentery.html';"  ><img src="services/ser4.png" alt=""></button>
+    </div>
+
+
+    <div class="child-ser">
+      <button  onclick="location.href = 'technicians.html';"  ><img src="services/ser5.png" alt=""></button>
+    </div>
+
+
+    <div class="child-ser">
+       <button  onclick="location.href = 'electricians.html';"  ><img src="services/ser06.png" alt=""></button>
+    </div>
+
+
+    <!-- <div class="child-ser">
+       <button  onclick="location.href = 'maid.html';"  ><img src="services/ser07.png" alt=""></button>
+    </div> -->
+
+
+     <div class="child-ser">
+      <button  onclick="location.href = 'salon.html';"  ><img src="services/ser08.png" alt=""></button>
+     </div>
+
+
+      <div class="child-ser">
+        <button  onclick="location.href = 'beauty.html';"  ><img src="services/ser09.png" alt=""></button>
+      </div>
+
+
+      <div class="child-ser">
+        <button  onclick="location.href = 'painting.html';"  ><img src="services/ser10.png" alt=""></button>
+      </div>
+
+ </div>
+</body>
+</html>
+
+       
+
+
+
+
+
+
+
+
+
+
+  
+
+
+ 
+
+
+
+
+
+
+  

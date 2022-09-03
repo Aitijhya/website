@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetYourHelpers</title>
+    <style>
+        .thank{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 260px;
+            width: 250px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: first baseline;
+            background: rgba(255, 255, 7, 0.092);
+        }
+        img{
+             height: 100px;
+             width: 150px;
+
+        }
+        p{
+            margin-left: 25px;
+            margin-right: auto;
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+        }
+        .orderid{
+            margin-left: 10px;
+        
+          
+        }
+        button{
+            background: green;
+            padding: 4px 5px;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            background: rgb(127, 204, 127);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+   <div class="thank">
+
+
+<div class="box">
+<img src="images/image-removebg-preview (2).png" alt="">
+  <p>Your Order has been
+  Placed Successfully.
+  We will reach
+  you soon</p>
+  <div class="orderid" >
+       <!-- Order ID: #${z} -->
+  </div>
+  <br>
+  <a href="index.html"><button type="button" >OKAY</button></a>
+
+</div>
+
+
+   </div>
+
+
+
+
+
+
+    <script src="order.js"></script>
+   
+</body>
+</html>

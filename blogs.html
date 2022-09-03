@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetYourHelpers</title>
+  <link rel="stylesheet" href="home.css">
+
+<style>
+  body{
+    background: #000;
+  }
+  .feed{
+   display: flex;
+   flex-direction: column;
+   background: lightgrey;
+  }
+  .apply{
+    position: relative;
+    left: auto;
+  }
+  .feed1{
+   display: block;
+   height: 36vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+  }
+  p{
+    font-size: 1.8rem;
+    padding: 5px;
+    font-style: italic;
+  }
+  h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: brown;
+  }
+  .feed1{
+   display: block;
+   /* height: 53vh; */
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+  }
+  @media (max-width:1280px) and (min-width:0px) {
+   
+     
+    #navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: solid red;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top:-890px;
+        left: 0%;
+        display: none;
+        transition: 0.21s;
+     }
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0%;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    li{
+      margin-top: 20px;
+    }
+    #cross{
+        /* display: block; */
+        position: absolute;
+        left: 80%;
+        top: 15px;
+        z-index: 11;
+    }
+    .active{
+        color: yellow;
+    }
+    #hams{
+        display: block;
+        position: absolute;
+        left: 75%;
+        top: 15px;
+        z-index: 11;
+    }
+    #ham-burger:checked~ul{
+        display: block;
+        top: 40px;
+        z-index: 15;
+    }
+    #ham-burger:checked~#hams{
+      display: none;
+    }
+    #ham-burger:checked~#cross{
+      display: block;
+    }
+    #ham-burger:checked~h3{
+     z-index: -100;
+    }
+    p{
+    font-size: 1.2rem;
+    padding: 5px;
+    font-style: italic;
+  }
+  h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+  }
+    
+
+  }
+  @media (max-width:400px) and (min-width:0) {
+    .feed1{
+   display: block;
+   height: 60vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+  }
+  }
+
+</style>
+
+
+</head>
+
+<body>
+  <div class="home" id="navbar">
+    <input type="checkbox" id="ham-burger" name="hamicon">
+    <label id="hams" for="ham-burger"><img width="60px" src="images/image-removebg-preview.png" alt=""></label>
+    <label id="cross" for="ham-burger"><img width="33px" src="images/image__1_-removebg-preview.png" alt=""></label>
+  <ul id="menu">      
+    <li><a  href="index.html">Home</a></li>
+    <li><a  href="services.html">Services</a></li>
+    <li><a  href="about.html">About Us</a></li>
+    <li><a  href="contact.html">Contact Us</a></li>
+    <li><a class="active" href="blogs.html">Blogs</a></li>
+</ul>
+</div>
+
+
+  <div class="feed">
+    <br>
+    <div class="feed1">
+      <div>
+        <h2> OPP0RTUNITIES FOR YOU !!! </h2>
+      </div>
+      <div>
+        <P>Hey guys this Soham ,ceo of Helpers 24/7 
+            You will be glad to know that we hiring 
+            service provides in our company.Categories 
+            like tecnicians,electricians
+            ,plumbers ,massons ,cook ,nurses etc will
+            be welcomed.Note your experience will be 
+            reviewed thoroly!! Good Luck
+        </P>
+      </div>
+       
+      <div>
+        <a id="apply" style="color: green; "  href="https://forms.gle/4GcVrCcLETCB81e37">Click here to apply</a>
+      </div>
+    </div>
+    <hr>
+    <div class="feed1">
+
+    </div>
+    <hr>
+    <div class="feed1">
+
+    </div>
+    <hr>
+    <div class="feed1">
+
+    </div>
+    <hr>
+    <div class="feed1">
+
+    </div>
+
+
+  </div>
